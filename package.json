@@ -1,0 +1,16 @@
+{
+  "name": "BlogPost",
+  "version": "0.0.1",
+  "description": "Blog platform on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  }
+}
