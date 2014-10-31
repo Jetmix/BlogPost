@@ -1,17 +1,12 @@
 var express = require('express'),
 	config = require('./app/configuration/config'),
+	path = require('path'),
 	app = express(),
 	port = process.env.PORT || config.get('port');
 
 app.set('port', port);
 
-app.configure(function () {
-	app.use(express.bodyParser());
-	app.use(express.methodOverride());
-	app.use(app.router);
-	app.use(express.static(path.join(__dirname, 'public'));
-	app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (request, response) {
 	response.send('Index.html here');
