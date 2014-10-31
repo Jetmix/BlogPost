@@ -1,13 +1,26 @@
-var express = require('express')
-var app = express();
+var express = require('express'),
+	config = require('./app/configuration/config'),
+	app = express(),
+	port = process.env.PORT || config.get('port');
 
-app.set('port', (process.env.PORT || 5000))
-app.use(express.static(__dirname + '/public'))
+app.set('port', port);
 
-app.get('/', function(request, response) {
-  response.send('Hello World!')
-})
+app.configure(function () {
+	app.use(express.bodyParser());
+	app.use(express.methodOverride());
+	app.use(app.router);
+	app.use(express.static(path.join(__dirname, 'public'));
+	app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+});
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-})
+app.get('/', function (request, response) {
+	response.send('Index.html here');
+});
+
+app.get('/api', function (request, response) {
+	response.send('Api Documentation here');
+});
+
+app.listen(port, function() {
+  console.log("Node app is running at localhost:" + port)
+});

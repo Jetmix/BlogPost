@@ -6,8 +6,13 @@
   "scripts": {
     "start": "node index.js"
   },
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/Jetmix/BlogPost.git"
+  },
   "dependencies": {
-    "express": "~4.9.x"
+    "express": "~4.9.x",
+    "underscore": "1.4.x"
   },
   "engines": {
     "node": "0.10.x",
