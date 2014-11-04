@@ -1,0 +1,103 @@
+2014-10-30T19:16:47.179479+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=nodejs-blogpost.herokuapp.com request_id=79b7144e-f077-48c2-a2c2-67bdebf7a4ae fwd="86.57.158.78" dyno=web.1 connect=0ms service=2ms status=404 bytes=222
+2014-10-30T20:28:09.517087+00:00 heroku[web.1]: Idling
+2014-10-30T20:28:09.517474+00:00 heroku[web.1]: State changed from up to down
+2014-10-30T20:28:14.087410+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-10-30T20:28:16.125902+00:00 heroku[web.1]: Process exited with status 143
+2014-10-31T14:31:32.654617+00:00 heroku[web.1]: State changed from down to starting
+2014-10-31T14:31:32.654179+00:00 heroku[web.1]: Unidling
+2014-10-31T14:31:34.069272+00:00 heroku[web.1]: Starting process with command `node index.js`
+2014-10-31T14:31:34.982578+00:00 app[web.1]: Node app is running at localhost:56542
+2014-10-31T14:31:35.485802+00:00 heroku[web.1]: State changed from starting to up
+2014-10-31T14:31:36.740926+00:00 heroku[router]: at=info method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=c862698b-95fb-43b4-9d59-c6d34cbe7ae2 fwd="86.57.158.78" dyno=web.1 connect=1ms service=37ms status=200 bytes=192
+2014-10-31T14:36:10+00:00 heroku[slug-compiler]: Slug compilation started
+2014-10-31T14:36:16+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-10-31T14:36:16.234239+00:00 heroku[api]: Deploy ad11dc1 by jetmixx@gmail.com
+2014-10-31T14:36:16.234422+00:00 heroku[api]: Release v4 created by jetmixx@gmail.com
+2014-10-31T14:36:16.378054+00:00 heroku[web.1]: State changed from up to starting
+2014-10-31T14:36:18.131838+00:00 heroku[web.1]: Starting process with command `node index.js`
+2014-10-31T14:36:18.936094+00:00 heroku[web.1]: Stopping all processes with S
+IGTERM
+2014-10-31T14:36:19.258638+00:00 app[web.1]:           ^
+2014-10-31T14:36:19.260194+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2014-10-31T14:36:19.260203+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-10-31T14:36:19.260202+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-10-31T14:36:19.258128+00:00 app[web.1]: 
+2014-10-31T14:36:19.260184+00:00 app[web.1]: Error: Cannot find module './app/configuration/config'
+2014-10-31T14:36:19.258220+00:00 app[web.1]: module.js:340
+2014-10-31T14:36:19.258631+00:00 app[web.1]:     throw err;
+2014-10-31T14:36:19.260200+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-10-31T14:36:19.260190+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2014-10-31T14:36:19.260192+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2014-10-31T14:36:19.260207+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2014-10-31T14:36:19.260198+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:2:11)
+2014-10-31T14:36:19.260195+00:00 app[web.1]:     at require (module.js:380:17)
+2014-10-31T14:36:19.260205+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2014-10-31T14:36:20.232751+00:00 heroku[web.1]: Process exited with status 8
+2014-10-31T14:36:20.279939+00:00 heroku[web.1]: Process exited with status 143
+2014-10-31T14:36:20.265496+00:00 heroku[web.1]: State changed from starting to crashed
+2014-10-31T14:36:20.266191+00:00 heroku[web.1]: State changed from crashed to starting
+2014-10-31T14:36:22.695635+00:00 heroku[web.1]: Starting process with command `node index.js`
+2014-10-31T14:36:24.122951+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2014-10-31T14:36:24.122952+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2014-10-31T14:36:24.122954+00:00 app[web.1]:     at require (module.js:380:17)
+2014-10-31T14:36:24.122957+00:00 app[web.1]:     at Object.<anonymous> (/app/index.js:2:11)
+2014-10-31T14:36:24.120674+00:00 app[web.1]: 
+2014-10-31T14:36:24.122946+00:00 app[web.1]: Error: Cannot find module './app/configuration/config'
+2014-10-31T14:36:24.122949+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2014-10-31T14:36:24.120790+00:00 app[web.1]: module.js:340
+2014-10-31T14:36:24.121192+00:00 app[web.1]:     throw err;
+2014-10-31T14:36:24.121199+00:00 app[web.1]:           ^
+2014-10-31T14:36:24.122966+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2014-10-31T14:36:24.122958+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-10-31T14:36:24.122960+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-10-31T14:36:24.122962+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-10-31T14:36:24.122964+00:00 app[w
+eb.1]:     at Function.Module._load (module.js:312:12)
+2014-10-31T14:36:24.956532+00:00 heroku[web.1]: Process exited with status 8
+2014-10-31T14:36:24.966856+00:00 heroku[web.1]: State changed from starting to crashed
+2014-10-31T14:36:28.782811+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=d813860f-e583-42c3-8170-6a9e8b5e5ff2 fwd="54.80.1.102" dyno= connect= service= status=503 bytes=
+2014-10-31T14:36:36.561454+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=2b7560f8-1336-4bb6-8300-07ad3657d91c fwd="86.57.158.78" dyno= connect= service= status=503 bytes=
+2014-10-31T14:36:37.302384+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nodejs-blogpost.herokuapp.com request_id=e5128a13-996a-4bb5-8fe6-aa55844ce880 fwd="86.57.158.78" dyno= connect= service= status=503 bytes=
+2014-10-31T14:36:37.441595+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nodejs-blogpost.herokuapp.com request_id=b27eb9a0-c1f2-4b42-8b36-a8b03fbb6c6a fwd="86.57.158.78" dyno= connect= service= status=503 bytes=
+2014-10-31T14:36:49.174025+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=00c9aad0-1768-412f-91e7-f1af63179236 fwd="86.57.158.78" dyno= connect= service= status=503 bytes=
+2014-10-31T14:36:50.438453+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=dabe2921-c02e-4828-9f12-1f716c679ecc fwd="86.57.158.78" dyno= connect= service= status=503 bytes=
+2014-10-31T14:38:52+00:00 heroku[slug-compiler]: Slug compilation started
+2014-10-31T14:38:58+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-10-31T14:38:58.187920+00:00 heroku[api]: Deploy 1197aca by jetmixx@gmail.com
+2014-10-31T14:38:58.188012+00:00 heroku[api]: Release v5 created by jetmixx@gmail.com
+2014-10-31T14:38:58.294319+00:00 heroku[web.1]: State changed from crashed to starting
+2014-10-31T14:39:00.225391+00:00 heroku[web.1]: Starting process with command `node index.js`
+2014-10-31T14:39:01.410995+00:00 app[web.1]:           ^
+2014-10-31T14:39:01.412693+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2014-10-31T14:39:01.407252+00:00 app[web.1]: 
+2014-10-31T14:39:01.412690+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-10-31T14:39:01.410968+00:00 app[web.1]:     throw err;
+2014-10-31T14:39:01.412692+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-10-31T14:39:01.412679+00:00 app[web.1]: Error: Cannot find module 'nconf'
+2014-10-31T14:39:01.412694+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2014-10-31T14:39:01.412683+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2014-10-31T14:39:01.412682+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2014-10-31T14:39:01.412686+00:00 app[web.1]:     at require (module.js:380:17)
+2014-10-31T14:39:01.412684+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2014-10-31T14:39:01.412688+00:00 app[web.1]:     at Object.<anonymous> (/app/app/configuration/config.js:1:75)
+2014-10-31T14:39:01.412689+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-10-31T14:39:01.410598+00:00 app[web.1]: module.js:340
+2014-10-31T14:39:02.251181+00:00 heroku[web.1]: Process exited with status 8
+2014-10-31T14:39:02.264998+00:00 heroku[web.1]: State changed from starting to crashed
+2014-10-31T14:39:03.222246+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=cdf46216-c999-45f5-b770-86b938321507 fwd="54.80.1.102" dyno= connect= service= status=503 bytes=
+2014-10-31T14:42:28.241105+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=268ef979-2fec-4c6d-b7a7-c6b0efe94c84 fwd="86.57.158.78" dyno= connect= service= status=503 bytes=
+2014-10-31T14:45:38.025365+00:00 heroku[api]: Starting process with command `bash` by jetmixx@gmail.com
+2014-10-31T14:45:39.799046+00:00 heroku[run.8475]: Awaiting client
+2014-10-31T14:45:39.826483+00:00 heroku[run.8475]: Starting process with command `bash`
+2014-10-31T14:45:40.167818+00:00 heroku[run.8475]: State changed from starting to up
+2014-10-31T14:46:42.460954+00:00 heroku[run.8475]: State changed from up to complete
+2014-10-31T14:46:42.449838+00:00 heroku[run.8475]: Process exited with status 8
+2014-10-31T14:49:48+00:00 heroku[slug-compiler]: Slug compilation started
+2014-10-31T14:49:54.945891+00:00 heroku[api]: Release v6 created by jetmixx@gmail.com
+2014-10-31T14:49:54.945832+00:00 heroku[api]: Deploy e51cc9c by jetmixx@gmail.com
+2014-10-31T14:49:55+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-10-31T14:49:55.628041+00:00 heroku[web.1]: State changed from crashed to starting
+2014-10-31T14:49:57.029187+00:00 heroku[web.1]: Starting process with command `node index.js`
+2014-10-31T14:49:57.885103+00:00 app[web.1]: Node app is running at localhost:36293
+2014-10-31T14:49:58.281188+00:00 heroku[web.1]: State changed from starting to up
+2014-10-31T14:49:59.539885+00:00 heroku[router]: at=info method=GET path="/" host=nodejs-blogpost.herokuapp.com request_id=c9394110-266b-4274-a860-a10247e58893 fwd="54.80.1.102" dyno=web.1 connect=1ms service=13ms status=200 bytes=195
