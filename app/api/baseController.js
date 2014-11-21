@@ -5,43 +5,51 @@ function processError (err) {
 
 module.exports = {
 	create: function (object) {
-		object.save(function(err)) {
+		object.save(function(err) {
 			if (err) {
-				console.log(err);
-				throw err;
+				processError(err);
 			}
-		}
+		});
 	},
 	read: function (Model) {
-		return Model.find(function (err, collection) {
+		var result = undefined;
+		Model.find(function (err, collection) {
 			if (!err) {
-				return collection;
+				result = collection;
 			} else {
-				console.log(err);
-				throw err; 
+				processError(err);
 			}
 		});
+		return result;
 	},
 	readById: function (Model, id) {
+		var result = undefined;
 		return Model.findById(id, function (err, item) {
 			if (!err) {
-				return item;
+				result = item;
 			} else {
-				console.log(err);
-				throw err;
+				processError(err);
 			}
 		});
+		return result;
 	},
 	update: function (Model, object) {
-		var currentObj = Model.findById(object._id);
-		currentObj.remove(function(err){
+		Model.findById(object._id, function (err, item) {
 			if (err) {
-				console.log(err);
-				throw err;
+				processError(err);
+			}
+			item.remove(function(err){
+				if (err) {
+					processError(err);
+				}
+			})
+		});
+	},
+	delete: function (id) {
+		object.remove(function(err) {
+			if (err) {
+				processError(err);
 			}
 		})
-	}
-	delete: function (object) {
-
 	}
 };
